@@ -1,0 +1,65 @@
+{
+  "name": "Project",
+  "type": "C51",
+  "dependenceList": [],
+  "srcDirs": [
+    "inc",
+    "src"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [
+      {
+        "path": "STARTUP.A51"
+      }
+    ],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "fcc98c2b275b28f635f94639713c7d3b"
+  },
+  "targets": {
+    "Target 1": {
+      "excludeList": [
+        "src/user.c"
+      ],
+      "toolchain": "Keil_C51",
+      "compileConfig": {
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "python ./tools/stcflash.py -p ${port} \"${programFile}\"",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {
+        "Custom": {
+          "bin": "",
+          "commandLine": "",
+          "eraseChipCommand": ""
+        },
+        "stcgal": {
+          "bin": "",
+          "eepromImgPath": "null",
+          "extraOptions": "",
+          "options": ".eide/stc.flash.json"
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../../smartcar/keil/C51/INC/STC",
+          "inc"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": []
+      }
+    }
+  },
+  "version": "3.3"
+}
